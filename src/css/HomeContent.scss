@@ -1,18 +1,34 @@
 .home-content {
-    background-color: #38393f;
-    width: 80%;
+    background: var(--couleur-secondaire);
+    width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    position: absolute;
+    top: 0;
 }
 
-.aboutMe{
+.contentSkills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Entete{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
+    justify-content: space-around;
+    margin: 20vh 0 0 0px;
     flex-wrap: wrap;
     position: relative;
+}
 
+.Entete h1, p{
+    margin-bottom: 0;
+    text-align: left;
 }
 .imageProfil{
     width: 30%;
@@ -20,18 +36,60 @@
 }
 
 .imageProfil::after{
-    // linear gradient from bottom to top transparent to black
+
 }
 
 .Information{
     display: inline-block;
-    whiteSpace: 'nowrap'
+    whiteSpace: 'nowrap';
+    margin-top: 0;
 }
 .Information p{
-    color: #39df39;
+    color: var(--couleur-quaternaire);
 }
 .Information p span{
-    color: #2eb42e;
+    color: var(--couleur-quintuple);
+}
+
+.textAboutMe{
+    max-width: 300px;
+}
+
+.textAboutMe p{
+    text-align: left;
+}
+.textAboutMe:last-child{
+    margin-bottom: 20px;
+}
+
+.AboutMe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    width: 100%;
+    position: relative;
+    background-color: var(--couleur-principale);
+    box-shadow: var(--couleur-principale) 0px 0px 10px 0px;
+}
+
+.AboutMe:first-child{
+    width: 100%;
+}
+
+.AboutMe h1{
+    font-size: 50px;
+}
+
+.description{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 40px;
+    // taille interligne
+
+    line-height: 2;
 }
 
 .gradient-border {
@@ -77,5 +135,10 @@
     }
 }
 
+@media (max-width: 40rem) {
+    .description {
+        width: 80%;
+    }
 
+}
 
