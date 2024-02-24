@@ -1,0 +1,23 @@
+// color var
+
+:root {
+  --couleur-background: #222327; /* Définition de la variable de couleur de fond */
+  --couleur-principale: #1E1E1E; /* Définition de la variable de couleur principale */
+  --couleur-secondaire: #242527; /* Définition de la variable de couleur secondaire */
+    --couleur-tertiaire: #2E2A41; /* Définition de la variable de couleur tertiaire */
+    --couleur-quaternaire: #7462DE; /* Définition de la variable de couleur quaternaire */
+    --couleur-quintuple: #a89cf2; /* Définition de la variable de couleur quintuple */
+}
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
