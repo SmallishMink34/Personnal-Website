@@ -1,0 +1,81 @@
+.home-content {
+    background-color: #38393f;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutMe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+.imageProfil{
+    width: 30%;
+    min-width: 256px;
+}
+
+.imageProfil::after{
+    // linear gradient from bottom to top transparent to black
+}
+
+.Information{
+    display: inline-block;
+    whiteSpace: 'nowrap'
+}
+.Information p{
+    color: #39df39;
+}
+.Information p span{
+    color: #2eb42e;
+}
+
+.gradient-border {
+    --border-width: 5px;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    background: #222;
+    border-radius: calc(2 * var(--border-width));
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: calc(-1 * var(--border-width));
+        left: calc(-1 * var(--border-width));
+        z-index: -1;
+        width: calc(100% + var(--border-width) * 2);
+        height: calc(100% + var(--border-width) * 2);
+        background-size: 300% 300%;
+        background: linear-gradient(
+                        60deg,
+                        hsl(224, 85%, 66%),
+                        hsl(269, 85%, 66%),
+                        hsl(314, 85%, 66%),
+                        hsl(359, 85%, 66%),
+                        hsl(44, 85%, 66%),
+                        hsl(89, 85%, 66%),
+                        hsl(134, 85%, 66%),
+                        hsl(179, 85%, 66%)
+        ) 0 50%;
+        border-radius: calc(2 * var(--border-width));
+        animation: moveGradient 4s alternate infinite;
+    }
+}
+
+@keyframes moveGradient {
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
