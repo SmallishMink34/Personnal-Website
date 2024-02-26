@@ -5,7 +5,7 @@
     padding: 20px 0;
     z-index: 100;
     width: 100%;
-
+    background-color: var(--couleur-secondaire);
 }
 
 .menu-header h2{
@@ -16,10 +16,14 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     transition-delay: 0.5s;
+}
+
+.menu-header menu ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .menu-header menu a{
@@ -28,6 +32,7 @@
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
+    white-space: nowrap;
 
 }
 
@@ -38,5 +43,11 @@
 @media (max-width: 768px){
     .menu-header menu{
         display: none;
+    }
+}
+
+@media (max-width: 1080px){
+    .menu-header menu{
+        left: 70%;
     }
 }

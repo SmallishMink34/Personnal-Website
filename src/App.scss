@@ -1,12 +1,24 @@
 // color var
 
 :root {
+  //--couleur-background: #222327; /* Définition de la variable de couleur de fond */
+  //--couleur-principale: #1E1E1E; /* Définition de la variable de couleur principale */
+  //--couleur-secondaire: #242527; /* Définition de la variable de couleur secondaire */
+  //  --couleur-tertiaire: #2E2A41; /* Définition de la variable de couleur tertiaire */
+  //  --couleur-quaternaire: #7462DE; /* Définition de la variable de couleur quaternaire */
+  //  --couleur-quintuple: #a89cf2; /* Définition de la variable de couleur quintuple */
+
   --couleur-background: #222327; /* Définition de la variable de couleur de fond */
-  --couleur-principale: #1E1E1E; /* Définition de la variable de couleur principale */
-  --couleur-secondaire: #242527; /* Définition de la variable de couleur secondaire */
-    --couleur-tertiaire: #2E2A41; /* Définition de la variable de couleur tertiaire */
-    --couleur-quaternaire: #7462DE; /* Définition de la variable de couleur quaternaire */
-    --couleur-quintuple: #a89cf2; /* Définition de la variable de couleur quintuple */
+  --couleur-principale: #EFECEC; /* Couleur principale */
+  --couleur-secondaire: #FFB0B0; /* Couleur secondaire */
+  --couleur-tertiaire: #FC6736; /* Couleur tertiaire */
+  --couleur-quaternaire: #0C2D57; /* Couleur quaternaire */
+
+  scrollbar-color: bisque beige ;
+  scrollbar-width: thin;
+}
+body{
+  margin: 0;
 }
 
 #root {
