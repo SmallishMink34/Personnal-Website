@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     margin: 20vh 0 0 0px;
     flex-wrap: wrap;
     position: relative;
@@ -30,12 +31,66 @@
     margin-bottom: 0;
     text-align: left;
 }
-.imageProfil{
-    width: 30%;
-    min-width: 256px;
+
+.Entete h1{
+    font-size: 80px;
+    color: var(--couleur-quaternaire);
 }
 
-.imageProfil::after{
+.Entete::before {
+    content: "";
+    position: absolute;
+    top: calc((5vh + 5vw)/2);
+    left: calc((5vh + 5vw)/2);
+    width: calc((30vh + 30vw)/2);
+    height: calc((30vh + 30vw)/2);
+    background-color: var(--couleur-tertiaire); /* Couleur du cercle */
+    border-radius: 50%; /* Pour créer un cercle */
+}
+
+.Decoratif-Element{
+    position: absolute;
+    transition: ease-in-out 0.5s;
+}
+
+.Decoratif-Element::before{
+    content: "";
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    width: calc((20vh + 20vw)/2);
+    height: calc((20vh + 20vw)/2);
+    background-color: var(--couleur-quaternaire); /* Couleur du cercle */
+    border-radius: 50%; /* Pour créer un cercle */
+    z-index: -1;
+}
+
+.imageProfil{
+    max-width: 100%;
+    object-fit: cover;
+
+}
+
+.ImageContainer{
+    position: relative;
+    max-width: 1200px;
+    width: 30%;
+    min-width: 256px;
+    z-index: 10;
+
+}
+
+.ImageContainer::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--couleur-secondaire)); /* Dégradé transparent à blanc */
+    pointer-events: none; /* Permet aux clics et aux actions de souris de passer à travers */
+    -webkit-clip-path: url(#clip-path); /* Utilisation d'un clip-path pour s'adapter à la forme de l'image */
+    clip-path: url("data:image/png;base64,VOTRE_CHAINE_BASE64");
 
 }
 

@@ -4,14 +4,18 @@ export function HomeContentFr() {
     return (
         <div className={"home-content"}>
             <div className={"Entete"}>
-                <img className={"imageProfil"} src="./image.png" alt="map" />
+                <div className={"ImageContainer"}>
+                    <div className={"Decoratif-Element"}></div>
+                    <img className={"imageProfil"} src="./image.png" alt="map"/>
+                </div>
                 <div className={"textAboutMe"}>
                     <h1>Un Futur Developer De Logiciel</h1>
                     <div className={"Information"}>
                         <p><b>20 ans</b> <span> &emsp;/&emsp;</span> <b>Français</b> <span>&emsp;/&emsp;</span>
                             <b>Étudiant</b></p>
                     </div>
-                    <p>Passionné d'informatique et de nouvelles technologies, je suis un étudiant en informatique à l'Université de Lorraine. Je suis actuellement en deuxième année de licence.</p>
+                    <p>Passionné d'informatique et de nouvelles technologies, je suis un étudiant en informatique à
+                        l'Université de Lorraine. Je suis actuellement en deuxième année de licence.</p>
                 </div>
             </div>
             <div className={"AboutMe"}>
@@ -19,7 +23,7 @@ export function HomeContentFr() {
                     <h1>A PROPOS DE MOI</h1>
                     <div className={"contentSkills"}>
                         <div className={"description"}>
-                            <h3> <b>Salut ! Je m'appelle Moulias Matthéo</b></h3>
+                            <h3><b>Hello ! Je m'appelle Moulias Matthéo</b></h3>
                             <p>Je suis actuellement un étudiant voulant devenir déveloper <br /> Mes connaissances ont été principalement acquises de manière autodidacte, en complément de mon apprentissage de l'informatique. Je possède une maîtrise dans divers langages de programmation, de balisage et déclaratifs, incluant le C/C++, Java, JavaScript, CSS et HTML, ainsi que PHP et SQL.</p>
                         </div>
                         <ul className={"Timeline"}>

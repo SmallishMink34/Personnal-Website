@@ -23,7 +23,7 @@
     --line-w: 0.25rem;
     display: grid;
     align-content: center;
-    gap: 1rem;
+    gap: 0rem;
     padding: 2rem;
     font-family: "Poppins", sans-serif;
 
@@ -39,7 +39,7 @@
     content: "";
     grid-column: 1;
     grid-row: 1 / span 20;
-    background: rgb(225, 225, 225);
+    background: var(--couleur-quaternaire);
     border-radius: calc(var(--line-w) / 2);
 }
 
@@ -151,7 +151,6 @@
         padding: 0;
     }
     .Timeline {
-        margin-left: 0;
         padding: 0;
         margin-inline: 0;
     }
