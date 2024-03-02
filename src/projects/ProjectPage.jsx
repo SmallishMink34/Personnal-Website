@@ -1,6 +1,7 @@
 import RepoComponent from "./RepoComponent.jsx";
 import axios from 'axios';
 import {useEffect, useState} from "react";
+import '../css/TimeLine.css';
 
 export function ProjectPage(){
     const [repos, setRepos] = useState([]);
@@ -22,10 +23,14 @@ export function ProjectPage(){
 
 
     return(
-        <div>
-            {repos.map((repo, index) => (
-                <RepoComponent key={index} username={"SmallIshMink34"} repoName={repo.name} />
-            ))}
+        <div className={"contentSkills"}>
+            <ul className={"Timeline"}>
+                {repos.map((repo, index) => (
+                    <li>
+                        <RepoComponent key={index} username={"SmallIshMink34"} repoName={repo.name}/>
+                    </li>
+                ))}
+            </ul>
         </div>
-    );
+);
 }

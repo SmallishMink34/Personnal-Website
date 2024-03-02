@@ -1,13 +1,19 @@
 import "./css/HomeContent.scss"
 import "./css/TimeLine.css"
+import "./css/animation.css"
 export function HomeContent() {
     return (
         <div className={"home-content"}>
 
-            <div className={"Entete"}>
+            <div className={"Entete wave"}>
                 <div className={"ImageContainer"}>
                     <div className={"Decoratif-Element"}></div>
-                    <img className={"imageProfil"} src="./image.png" alt="map"/>
+                    <div className={"Decoratif-Element-second"}></div>
+                    <img className={"imageProfil"} rel="preload" src='./image.png'
+                         alt="Selfie"/>
+                    <div className="gradient-overlay">
+                    </div>
+
                 </div>
                 <div className={"textAboutMe"}>
                     <h1>A Future Software developer</h1>
@@ -20,7 +26,7 @@ export function HomeContent() {
                 </div>
             </div>
             <div className={"AboutMe"}>
-            <div>
+                <div>
                     <h1>ABOUT ME</h1>
                     <div className={"contentSkills"}>
                         <div className={"description"}>

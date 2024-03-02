@@ -6,8 +6,9 @@
     justify-content: center;
     align-items: center;
     min-width: 300px;
-    position: absolute;
     top: 0;
+    z-index: -3;
+    transition: ease-in-out 0.5s;
 }
 
 .contentSkills{
@@ -18,13 +19,21 @@
 }
 
 .Entete{
+    background: var(--couleur-secondaire);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin: 20vh 0 0 0px;
     flex-wrap: wrap;
     position: relative;
+    padding-bottom: 4vh;
+    width: 100%;
+    --mask:
+            radial-gradient(26.25px at 50% calc(100% - 36.75px),#000 99%,#0000 101%) calc(50% - 42px) 0/84px 100%,
+            radial-gradient(26.25px at 50% calc(100% + 15.75px),#0000 99%,#000 101%) 50% calc(100% - 21px)/84px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    z-index: 1;
 }
 
 .Entete h1, p{
@@ -37,16 +46,7 @@
     color: var(--couleur-quaternaire);
 }
 
-.Entete::before {
-    content: "";
-    position: absolute;
-    top: calc((5vh + 5vw)/2);
-    left: calc((5vh + 5vw)/2);
-    width: calc((30vh + 30vw)/2);
-    height: calc((30vh + 30vw)/2);
-    background-color: var(--couleur-tertiaire); /* Couleur du cercle */
-    border-radius: 50%; /* Pour créer un cercle */
-}
+
 
 .Decoratif-Element{
     position: absolute;
@@ -65,11 +65,24 @@
     z-index: -1;
 }
 
-.imageProfil{
-    max-width: 100%;
-    object-fit: cover;
-
+.Decoratif-Element-second{
+    position: absolute;
+    transition: ease-in-out 0.5s;
 }
+
+.Decoratif-Element-second::before{
+    content: "";
+    position: absolute;
+    top: 8rem;
+    left: -5rem;
+    width: calc((30vh + 30vw)/2);
+    height: calc((30vh + 30vw)/2);
+    background-color: var(--couleur-tertiaire); /* Couleur du cercle */
+    border-radius: 50%; /* Pour créer un cercle */
+    z-index: -1;
+}
+
+
 
 .ImageContainer{
     position: relative;
@@ -77,21 +90,27 @@
     width: 30%;
     min-width: 256px;
     z-index: 10;
-
 }
 
-.ImageContainer::before {
-    content: "";
+.imageProfil {
+    display: block;
+    width: 100%; /* Assurez-vous que l'image prend toute la largeur du conteneur */
+    height: auto; /* Pour conserver le ratio hauteur/largeur de l'image */
+}
+
+.gradient-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 50%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--couleur-secondaire)); /* Dégradé transparent à blanc */
-    pointer-events: none; /* Permet aux clics et aux actions de souris de passer à travers */
-    -webkit-clip-path: url(#clip-path); /* Utilisation d'un clip-path pour s'adapter à la forme de l'image */
-    clip-path: url("data:image/png;base64,VOTRE_CHAINE_BASE64");
-
+    background: linear-gradient(to bottom, transparent 0%, var(--couleur-secondaire) 100%);
+    mask-image: url(./image.png);
+    -webkit-mask-image: url(./image.png);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    mask-position: bottom;
+    -webkit-mask-position: bottom;
 }
 
 .Information{
@@ -121,12 +140,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 0;
+    margin: -40px 0 0 0;
     padding: 0 0 0 0;
     width: 100%;
     position: relative;
     background-color: var(--couleur-principale);
     box-shadow: var(--couleur-principale) 0px 0px 10px 0px;
+    z-index: 0;
 }
 
 .AboutMe:first-child{
@@ -182,6 +202,8 @@
         animation: moveGradient 4s alternate infinite;
     }
 }
+
+
 
 @keyframes moveGradient {
     50% {

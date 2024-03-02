@@ -9,7 +9,7 @@ export function HomeContentFr() {
                     <img className={"imageProfil"} src="./image.png" alt="map"/>
                 </div>
                 <div className={"textAboutMe"}>
-                    <h1>Un Futur Developer De Logiciel</h1>
+                    <h1>Un Futur Développeur De Logiciel</h1>
                     <div className={"Information"}>
                         <p><b>20 ans</b> <span> &emsp;/&emsp;</span> <b>Français</b> <span>&emsp;/&emsp;</span>
                             <b>Étudiant</b></p>
@@ -24,7 +24,7 @@ export function HomeContentFr() {
                     <div className={"contentSkills"}>
                         <div className={"description"}>
                             <h3><b>Hello ! Je m'appelle Moulias Matthéo</b></h3>
-                            <p>Je suis actuellement un étudiant voulant devenir déveloper <br /> Mes connaissances ont été principalement acquises de manière autodidacte, en complément de mon apprentissage de l'informatique. Je possède une maîtrise dans divers langages de programmation, de balisage et déclaratifs, incluant le C/C++, Java, JavaScript, CSS et HTML, ainsi que PHP et SQL.</p>
+                            <p>Je suis actuellement un étudiant voulant devenir développeur <br /> Mes connaissances ont été principalement acquises de manière autodidacte, en complément de mon apprentissage de l'informatique. Je possède une maîtrise dans divers langages de programmation, de balisage et déclaratifs, incluant le C/C++, Java, JavaScript, CSS et HTML, ainsi que PHP et SQL.</p>
                         </div>
                         <ul className={"Timeline"}>
                             <li>

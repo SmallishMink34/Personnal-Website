@@ -25,16 +25,20 @@ const GitHubRepoInfo = ({ username, repoName }) => {
     }
 
     return (
-        <div style={{color: "white"}}>
+            <li>
+                <div className={"date"}></div>
+                <div className={"title"}><a href={repoInfo.html_url} target="_blank" rel="noreferrer">
+                    <h2>{repoInfo.full_name}</h2></a>
+                </div>
+                <div className={"descr"} style={{color: "white"}}>repoInfo.description</div>
+                {/*    <p>Description: {repoInfo.description}</p>*/}
+                {/*<p>Stars: {repoInfo.stargazers_count}</p>*/}
+                {/*<p>Open Issues: {repoInfo.open_issues}</p>*/}
+                {/*<p> Language : {repoInfo    .language} </p>*/}
+                {/*<p> </p>*/}
+                {/* Add more info as needed */}
+            </li>
 
-            <a href={repoInfo.html_url} target="_blank" rel="noreferrer"><h2>{repoInfo.full_name}</h2></a>
-            <p>Description: {repoInfo.description}</p>
-            <p>Stars: {repoInfo.stargazers_count}</p>
-            <p>Open Issues: {repoInfo.open_issues}</p>
-            <p> Language : {repoInfo    .language} </p>
-            <p> </p>
-            {/* Add more info as needed */}
-        </div>
     );
 };
 

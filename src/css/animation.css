@@ -1,0 +1,30 @@
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fadeIn {
+    animation: fadeInFromTop 0.5s ease forwards;
+}
+
+@keyframes fadeOutToBottom {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.fadeOut {
+    animation: fadeOutToBottom 0.5s ease forwards;
+}
