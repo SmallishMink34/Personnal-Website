@@ -26,7 +26,7 @@ const GitHubRepoInfo = ({ username, repoName }) => {
 
     return (
             <li>
-                <div className={"date"}></div>
+                <div className={"date"}>{} </div>
                 <div className={"title"}><a href={repoInfo.html_url} target="_blank" rel="noreferrer">
                     <h2>{repoInfo.full_name}</h2></a>
                 </div>

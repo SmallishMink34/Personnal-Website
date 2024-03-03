@@ -48,12 +48,12 @@ export function HomeContent() {
                             <li>
                                 <div className={"date"}>2022 - 2023</div>
                                 <div className={"title"}><b>First years of University</b></div>
-                                <div className={"descr"}>I have learned C/C++ and started with algorithmics.</div>
+                                <div className={"descr"}>FST Vandoeuvres-les-nancy <br/>I have learned C/C++ and started with algorithmics.</div>
                             </li>
                             <li>
                                 <div className={"date"}>2023 - 2024</div>
                                 <div className={"title"}><b>Second years of University</b></div>
-                                <div className={"descr"}>I learn java and some memories optimizations.</div>
+                                <div className={"descr"}>FST Vandoeuvres-les-nancy <br/>I learn java and some memories optimizations.</div>
                             </li>
                         </ul>
                     </div>
