@@ -1,0 +1,37 @@
+{
+    "header": {
+        "title": "My Professional Journey",
+        "home": "Accueil",
+        "resume": "Mon CV",
+        "projects": "Projets"
+    },
+    "HomePage": {
+        "title": "Un Futur Développeur De Logiciel",
+        "age" : "20 ans",
+        "lang" : "Français",
+        "job" : "Étudiant",
+        "about" : "Passionné d'informatique et de nouvelles technologies, je suis étudiant en informatique à  l'Université de Lorraine. Je suis actuellement en deuxième année de licence.",
+        "aboutMe" : "A PROPOS DE MOI",
+        "desc" : "Bonjour ! Je m'appelle Moulias Matthéo",
+        "desc2" : "Je suis actuellement un étudiant voulant devenir développeur <br/> Mes connaissances ont été principalement acquises de manière autodidacte, en complément de mon apprentissage de l'informatique. Je possède une maîtrise dans divers langages de programmation, de balisage et déclaratifs, incluant le C/C++, Java, JavaScript, CSS et HTML, ainsi que PHP et SQL.",
+        "timeline" : {
+            "first" : {
+                "name" : "Lycée",
+                "descr" : "Georges Baumont <br/> J'ai commencé à apprendre les bases du dévelopment"
+            },
+            "second": {
+                "name" : "Bac+1 en licence",
+                "descr" : "J'ai appris le C/C++ ainsi que l'algorithmie "
+            },
+            "third":{
+                "name": "Bac+2 en licence",
+                "descr" : "J'ai étudié le java et l'optimisation de la mémoire."
+            }
+        }
+         
+    },
+    "language": {
+        "change": "Switch to English",
+        "lang": "en"
+    }
+}

@@ -2,8 +2,10 @@ import "./css/Header.css";
 import "./css/animation.css";
 import {Link} from "react-router-dom";
 import {useState, useEffect} from "react";
+import { useTranslation } from 'react-i18next';
 
 export function MyHeader(){
+    const { t } = useTranslation();
     const [isChecked, setIsChecked] = useState(false);
     const handleCheckboxChange = () => {
         setIsChecked(!isChecked);
@@ -46,9 +48,9 @@ export function MyHeader(){
             </div>
             <menu id={"nav-menu"} className={"nav-menu " + (isChecked ? "SmartMenu fadeIn" : "fadeOut ")}>
                 <ul>
-                    <Link to={"Personnal-Website/"}>Home</Link>
-                    <Link to={"Personnal-Website/about"}><span>My resume</span></Link>
-                    <Link to={"Personnal-Website/projects"}>Projects</Link>
+                    <Link to={"Personnal-Website/home"}>{t('header.home')}</Link>
+                    {/*<Link to={"Personnal-Website/resume"}><span>{t('header.resume')}</span></Link>*/}
+                    <Link to={"Personnal-Website/projects"}>{t('header.projects')}</Link>
                 </ul>
             </menu>
         </div>
